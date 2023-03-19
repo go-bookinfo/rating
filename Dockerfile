@@ -1,4 +1,5 @@
 FROM alpine:3.17
-ADD rating /app/rating
+WORKDIR /app
+ADD rating rating
 EXPOSE 80
 ENTRYPOINT [ "/app/rating" ]
